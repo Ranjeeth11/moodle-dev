@@ -1,0 +1,15 @@
+{
+  "name": "Moodle Auto Install Dev",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "moodle",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8080, 8081],
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
